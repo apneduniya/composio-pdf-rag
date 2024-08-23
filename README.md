@@ -55,9 +55,10 @@ python3 main.py
 ## 🏛️ Project structure
 
 ```bash
+├── utils
+    └── extract.py
 ├── .env.example
 ├── .gitignore
-├── helpers.py
 ├── LICENSE
 ├── main.py
 ├── README.md
