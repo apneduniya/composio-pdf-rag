@@ -16,6 +16,14 @@ pip install -r requirements.txt
 echo "Login to your Composio acount"
 composio login
 
+# Check if the 'static' folder exists, and create it if it doesn't
+if [ ! -d "static" ]; then
+    echo "Creating 'static' folder..."
+    mkdir static
+else
+    echo "'static' folder already exists."
+fi
+
 # Copy env backup to .env file
 if [ -f ".env.example" ]; then
     echo "Copying .env.example to .env..."
